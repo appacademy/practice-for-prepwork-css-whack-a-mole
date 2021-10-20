@@ -47,7 +47,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
       clearTimeout(hideTimeout);
       hideMole(event.target);
+
+      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
       // event.target.classList.add('wgs__mole-head--hidden');
+
+      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
       // event.target.classList.add('wgs__mole-head--whacked');
     });
   }

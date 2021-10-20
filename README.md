@@ -15,7 +15,11 @@ That starter repository contains the following files:
 * **mole-hill.png** which contains the image of the dirt pile.
 * **mole.css** which is the file in which you will write your CSS.
 * **mole.html** which is the file in which you will write your HTML.
-* **mole.js** which is the file in which you will write your JavaScript.
+* **mole.js** which is the file which contains the JavaScript that controls the game.
+
+> Note: In these files, you will add your own HTML and CSS code, and you will
+> also be given some code. It is important to leave any commented-out code as-is
+> until you are directed to un-comment the code in the instructions.
 
 ## Making a mountain out of a mole hill
 
@@ -247,21 +251,50 @@ body {
 }
 ```
 
-## The game
+## Setting up the game
 
 Now that everything seems to be properly positioned and have the ability to
-animate, it's time to get the game a working.
+animate, it's time to get the game a working. You will do this by un-commenting
+some of the provided code in the starter files.
 
 Go through the HTML and add to the mole head `img` elements the Modifier CSS
 class that you created earlier.
 
 ![Empty playing field]
 
-## Winning the game
+You will also need to un-comment out the following line of JavaScript in
+**mole.js**:
+`event.target.classList.add('wgs__mole-head--hidden');`
+
+Finally, you will need to set up a scoreboard. Un-comment the code at the top of
+the **mole.html** file. Then, un-comment the provided code in the **mole.css**
+file.
+
+Now, when you save your files and refresh the browser, you should start seeing
+the moles popping up and down. When you successfully click on a mole, you should
+see your score increase.
+
+## Playing and winning the game
 
 The provided JavaScript code directs the game to popup a random mole 30 times. The
 scoreboard keeps track of how many moles you are able to whack out of the 30
-times they pop up. Play with your firends - the player with the highest score wins!
+times they pop up. Play with your friends - the player with the highest score wins!
+
+
+## Bonus - Animate a "whacked" mole
+
+If you're up for it, try to improve the game by creating some kind of visual
+effect when a popped-up mole is "whacked".
+
+Start by un-commenting the following line of code in the **mole.js** file:
+`event.target.classList.add('wgs__mole-head--whacked');`
+
+Then, add the class `wgs__mole-head--whacked` to all of the mole heads.
+
+Finally, apply some CSS rules to the **mole.css** file to make something cool
+happen when a mole is whacked. What CSS properties could be useful here? Look at the
+example below, and then come up with your own ideas.
+
 
 ![Final game movie]
 
