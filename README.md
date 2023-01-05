@@ -264,11 +264,17 @@ class that you created earlier.
 
 You will also need to un-comment out the following line of JavaScript in
 **mole.js**:
+
 `event.target.classList.add('wgs__mole-head--hidden');`
 
 Finally, you will need to set up a scoreboard. Un-comment the code at the top of
-the **mole.html** file. Then, un-comment the provided code in the **mole.css**
+the **mole.html** file.
+
+Then, un-comment the provided code in the **mole.css**
 file.
+
+Finally, un-comment the following line in the **mole.js** file:
+`moleHead.classList.remove('wgs__mole-head--hidden', 'wgs__mole-head--whacked');`
 
 Now, when you save your files and refresh the browser, you should start seeing
 the moles popping up and down. When you successfully click on a mole, you should
